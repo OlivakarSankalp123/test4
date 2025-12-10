@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jdk
 
 COPY target/docker-test-0.0.1-SNAPSHOT.jar  docker-test-0.0.1-SNAPSHOT.jar
 
