@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM openjdk:17-jdk-slim
 
 COPY target/docker-test-0.0.1-SNAPSHOT.jar  docker-test-0.0.1-SNAPSHOT.jar
 
