@@ -1,9 +1,9 @@
 FROM eclipse-temurin:17-jdk
 
-COPY target/docker-test-0.0.1-SNAPSHOT.jar app.jar
+WORKDIR /app
 
-WORKDIR app/
+COPY docker-test-0.0.1-SNAPSHOT.jar docker-test-0.0.1-SNAPSHOT.jar
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "docker-test-0.0.1-SNAPSHOT.jar"]
